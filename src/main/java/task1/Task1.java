@@ -16,6 +16,10 @@ public class Task1 {
         checkSumSign(3, -9);
         printColor(1110);
         compareNumbers(1,6);
+        fizzBuzz(30);
+        factorial(6);
+        System.out.println(fib(50));
+
     }
     public static void printThreeWords(){
         System.out.println("Orange");
@@ -52,4 +56,40 @@ public class Task1 {
             System.out.println("a < b");
         }
     }
+
+    public static void fizzBuzz(int a){
+        if (a%3 == 0 && a%5== 0){
+            System.out.println("делится на 3 и 5");
+        } else if (a%5 == 0 ) {
+            System.out.println("делится на 5");
+        }else if( a%3 == 0  ) {
+            System.out.println("делится на 3 ");
+        }
+    }
+
+    public static void factorial(int c){
+        int f = 1;
+        for (int i = 1; i < c; i++) {
+            f = f*i;
+            System.out.println(f);
+        }
+    }
+
+
+    public static long fib(int n){
+        if (n < 3){
+            return 1;
+        }
+           return fib(n - 2) + fib(n - 1);
+
+    }
+
+    public static void fib2(int n) {
+        for (int i = 1; i <=n ; i++) {
+
+
+        }
+
+    }
+
 }
